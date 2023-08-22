@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title -->
+    <title>IMDB Clone</title>
+    <!-- Fontawesome icon link -->
+    <script src="https://kit.fontawesome.com/6f38b70ccc.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main container for the entire website -->
+    <div id="main">
+        <!-- Header section -->
+        <div id="header">
+            <!-- Website logo in the form of an image -->
+            <div id="logodiv">
+                <a href="index.html"><img id="logoimg" src="imdb.png" alt="IMDB Clone"></a>
+            </div>
+            <!-- Search bar section -->
+            <div id="search-bar">
+                <!-- Search input and results display -->
+                <div class="search-content">
+                    <div id="search-area">
+                        <!-- Input area for searching movies -->
+                        <input type="text" name="searchMovie" id="searchMovie" placeholder="search your fav movie here"
+                            autocomplete="off">
+                    </div>
+                    <!-- Area where search results will be displayed -->
+                    <div class="results">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Header right section where favorite movies are displayed -->
+            <div id="right-section">
+                <button id="my-list">
+                    <!-- Link to navigate to the "My Favorite" section -->
+                    <a href="./myfav.html">My Favorites</a>
+                </button>
+            </div>
+        </div>
+        <!-- Movie container where all movies will be displayed -->
+        <div id="movie-container">
+            <div class="movie-element"></div>
+        </div>
+    </div>
+    <!-- Page navigation buttons for going to the next and previous pages -->
+    <div class="page-navigation">
+        <button id="prev-page">Prev</button>
+        <button id="next-page">Next</button>
+    </div>
+    <!-- JavaScript file for the main page functionality -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
